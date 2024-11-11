@@ -1,0 +1,101 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img{
+    display: block;
+}
+
+/* utility classes */
+.nowrap{
+    white-space: nowrap;
+}
+
+.offscreen{
+    position: absolute;
+    left: -10000px;
+}
+
+
+
+/* End utility classes */
+
+body{
+    font-family: 'Times New Roman', Times, serif;
+    min-height: 100vh;
+    background-color: aliceblue;
+    background-image:linear-gradient(to left ,
+    rgba(245,70,66,0.75),rgba(8,83,156,0.75)),url("img/download.jpeg");
+    background-repeat: no-repeat, repeat-y;
+    background-position: center right;
+    background-size: auto, 20%;
+
+    /* background: repeat-y right center url(img/download.jpeg), no-repeat linear-gradient(to left, steelblue, #fff);
+    background-size: 20% , auto; */
+
+}
+
+.container{
+    background-color: rgb(251, 210, 156);
+    background-image: url(img/images\ \(2\).jpeg);
+    background-repeat: repeat;
+    background-position: top;
+    background-size: contain;
+}
+
+.hero{
+    border-bottom: 5px solid purple;
+    padding: 20px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 30px;
+
+    background-color: hsla(0, 0%, 100%, 0.35);
+
+}
+
+.h1{
+    font-size: 500%;
+    color: #fff;
+    text-shadow: 2px 2px 5px black;
+    /* background-color: hsla(0, 0%, 0%, 0.408);
+    padding: 0.25rem;
+    border-radius: 10px; */
+}
+
+.profile-pic-figure{
+    width: 35%;
+}
+
+.profile-pic-figure img{
+    width: 100%;
+    height: auto;
+    min-width: 100px;
+    border: 5px double grey;
+    border-radius: 50%;
+}
+.example{
+    margin-top: 1rem;
+    padding-left: 20px;
+    border: 2px solid red;
+}
+
+.example img{
+    width: 25%;
+    height: auto;
+}
+
+.click{
+    font-weight: 800;
+    font-size: 18rem;
+    text-align: center;
+    background-image: url(img/images\ \(2\).jpeg);
+    background-size: 100%;
+    text-transform: uppercase;
+    -webkit-background-clip: text;
+    color: transparent;
+}

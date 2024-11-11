@@ -1,0 +1,31 @@
+/* typhography is the way that text is arranged and presented. */
+
+body{
+    padding: 25%;
+    font-size: 2rem;/* label inherit the size but the child's are not(button, text etc) */
+    color: purple;
+}
+
+input, button{
+    font: inherit;
+}
+
+
+.text{
+    text-decoration: underline;/* none,overline,line-through */
+    text-transform: lowercase;/* uppercase,capitalized */
+    text-align: justify;
+    text-indent: 2em;/* the first line is indented */
+
+}
+
+.line{
+    line-height: 1;
+    letter-spacing: 0.01em;
+    word-spacing: 1em;
+    font-size: 2rem;
+    font-weight: bolder;
+    font-style: italic;
+    font-family: sans-serif;
+    
+}

@@ -1,0 +1,46 @@
+* /*universal selector applies to every element*/ {
+    font-family: monospace;
+    border: 1px solid red;
+}
+body{ /*applies to the whole body not for the whole elements. check the border attribute*/
+    font-size: 22px;
+    border: 3px solid black;
+}
+h1, h2{
+    color: blue; /*h1, h2 means all h1 and h2s in the doc. but h1 h2 means h2s in the h1.*/
+}
+p{
+    color: purple;
+}
+p{
+    color: red;
+}/*paragraph color is red because the last command the file read is red*/
+
+.highlight{ /* any span in the p*/
+    text-transform: uppercase;
+    background-color: gold;
+}
+.gray{
+   color: gray; /*class is more specific so it overwrite the paragraph color write earlier*/
+}
+
+#second{
+    font-style: italic; /* don't use id in css much. keep away them as much as possible.*/
+}
+
+
+/*in inspect they have cut off the selectors that are not prioritized*/
+/* forms are not inherit. so we have to specially mention it.
+
+button, input, textarea, select{
+    font: inherit;
+} like this.*/
+
+/* if we use 
+p{
+  color: gray!important;
+}
+  this will overwrite everything. we don't use this unless it's very specific.*/
+
+
+/*prioritize list - use specificity calculator

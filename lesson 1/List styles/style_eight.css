@@ -1,0 +1,35 @@
+
+
+body{
+    padding: 5% 10%;
+    font-size: 2rem;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+
+}
+
+ol{
+    list-style-type: upper-roman;
+}
+
+ul{
+    list-style-type: square;
+    text-align: center;
+    list-style-position: inside;/* to get the bulle points align with the text */
+    color: blue;
+    line-height: 1.6;
+    /* list-style-image: url('https://png.pngtree.com/png-vector/20191113/ourmid/pngtree-green-check-mark-icon-flat-style-png-image_1986021.jpg');
+    list-style: square url('https://png.pngtree.com/png-vector/20191113/ourmid/pngtree-green-check-mark-icon-flat-style-png-image_1986021.jpg');
+    inside; */
+}
+
+ul li:nth-child(odd){
+    color: red;
+}
+
+ul ::marker{
+    color: black;
+    font-family: fantasy;
+    font-size: 1em;
+    content: "Only $5>> ";
+
+}
